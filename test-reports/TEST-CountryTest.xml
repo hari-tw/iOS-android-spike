@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="1" hostname="Haris-MacBook-Pro.local" name="CountryTest" tests="1" time="0.0" timestamp="2012-07-05 16:32:47 +1000">
+  <testcase classname="CountryTest" name="testExample" time="0">
+    <failure message="Unit tests are not implemented yet in CountriesAppTests" type="Failure">/Users/hari/Work/Official/Telstra/Automation Testing/CountriesApp/CountriesAppTests/CountryTest.m:30</failure>
+  </testcase>
+</testsuite>
