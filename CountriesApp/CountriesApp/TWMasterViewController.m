@@ -9,9 +9,11 @@
 #import "TWMasterViewController.h"
 
 #import "TWDetailViewController.h"
+#import "TWServiceFacade.h"
+#import "Country.h"
 
 @interface TWMasterViewController () {
-    NSMutableArray *_objects;
+    NSMutableArray *countries;
 }
 @end
 
@@ -29,6 +31,12 @@
             self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
         }
     }
+
+    TWServiceFacade *facade = [[TWServiceFacade alloc] init];
+
+    countries = [facade getCountries];
+
+
     return self;
 }
 							
@@ -36,10 +44,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
 }
 
 - (void)viewDidUnload
@@ -59,10 +63,10 @@
 
 - (void)insertNewObject:(id)sender
 {
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
+    if (!countries) {
+        countries = [[NSMutableArray alloc] init];
     }
-    [_objects insertObject:[NSDate date] atIndex:0];
+    [countries insertObject:[NSDate date] atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
@@ -76,7 +80,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    return countries.count;
 }
 
 // Customize the appearance of table view cells.
@@ -93,8 +97,8 @@
     }
 
 
-    NSDate *object = [_objects objectAtIndex:indexPath.row];
-    cell.textLabel.text = [object description];
+    Country *object = [countries objectAtIndex:indexPath.row];
+    cell.textLabel.text = [object name];
     return cell;
 }
 
@@ -107,7 +111,7 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
+        [countries removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
@@ -132,7 +136,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDate *object = [_objects objectAtIndex:indexPath.row];
+    NSDate *object = [countries objectAtIndex:indexPath.row];
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
 	    if (!self.detailViewController) {
 	        self.detailViewController = [[TWDetailViewController alloc] initWithNibName:@"TWDetailViewController_iPhone" bundle:nil];

@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30C0F13E9490697E4137125A /* CountryMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C0F920673FA0C4BF5DFF76 /* CountryMapper.m */; };
+		30C0F1F280774D88B0DB248A /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C0F2DF1903B2255B957415 /* Country.m */; };
+		30C0F56A4913F222739BFD02 /* CountryMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C0F920673FA0C4BF5DFF76 /* CountryMapper.m */; };
+		30C0FAC737D87A4C15A39DC4 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C0F2DF1903B2255B957415 /* Country.m */; };
+		30C0FDBD41E8CA1FF4E3C26E /* CountryMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C0F920673FA0C4BF5DFF76 /* CountryMapper.m */; };
+		30C0FED499DB270532DA8CF1 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C0F2DF1903B2255B957415 /* Country.m */; };
+		47913DB915AA851C00E6F879 /* libRESTClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47913DAF15AA83C100E6F879 /* libRESTClient.a */; };
+		47913DBB15AA857E00E6F879 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47913DBA15AA857E00E6F879 /* CoreData.framework */; };
+		47913DBD15AA858800E6F879 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47913DBC15AA858800E6F879 /* MobileCoreServices.framework */; };
+		47913DBF15AA858E00E6F879 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47913DBE15AA858E00E6F879 /* Security.framework */; };
+		47913DD415AA8C3300E6F879 /* TWServiceFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 47913DD315AA8C3300E6F879 /* TWServiceFacade.m */; };
+		47913DD515AA8C3300E6F879 /* TWServiceFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 47913DD315AA8C3300E6F879 /* TWServiceFacade.m */; };
+		47913DD615AA8C3300E6F879 /* TWServiceFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 47913DD315AA8C3300E6F879 /* TWServiceFacade.m */; };
 		47E83B0F15A5505B0055A937 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E83B0E15A5505B0055A937 /* UIKit.framework */; };
 		47E83B1115A5505B0055A937 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E83B1015A5505B0055A937 /* Foundation.framework */; };
 		47E83B1315A5505B0055A937 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E83B1215A5505B0055A937 /* CoreGraphics.framework */; };
@@ -33,6 +46,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		47913DAE15AA83C100E6F879 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47913DA415AA83C000E6F879 /* RESTClient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A414FD4213DB459200F96152;
+			remoteInfo = RESTClientLib;
+		};
+		47913DB015AA83C100E6F879 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47913DA415AA83C000E6F879 /* RESTClient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A43E639E152A47E6006AEBCD;
+			remoteInfo = RESTClientFramework;
+		};
+		47913DB215AA83C100E6F879 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47913DA415AA83C000E6F879 /* RESTClient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A46269A114198ED3005544D6;
+			remoteInfo = RESTClientSpecs;
+		};
 		47E83B3C15A5505B0055A937 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 47E83B0115A5505B0055A937 /* Project object */;
@@ -50,6 +84,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30C0F2DF1903B2255B957415 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
+		30C0F920673FA0C4BF5DFF76 /* CountryMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryMapper.m; sourceTree = "<group>"; };
+		30C0FBFDDA716065CB4EDFAE /* CountryMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryMapper.h; sourceTree = "<group>"; };
+		30C0FE65974C1F5AD5AB45B4 /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
+		47913DA415AA83C000E6F879 /* RESTClient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RESTClient.xcodeproj; path = lib/RESTClient/RESTClient.xcodeproj; sourceTree = "<group>"; };
+		47913DBA15AA857E00E6F879 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		47913DBC15AA858800E6F879 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		47913DBE15AA858E00E6F879 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		47913DD215AA8C3300E6F879 /* TWServiceFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWServiceFacade.h; sourceTree = "<group>"; };
+		47913DD315AA8C3300E6F879 /* TWServiceFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWServiceFacade.m; sourceTree = "<group>"; };
 		47E83B0A15A5505B0055A937 /* CountriesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountriesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E83B0E15A5505B0055A937 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		47E83B1015A5505B0055A937 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,6 +129,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47913DBF15AA858E00E6F879 /* Security.framework in Frameworks */,
+				47913DBD15AA858800E6F879 /* MobileCoreServices.framework in Frameworks */,
+				47913DBB15AA857E00E6F879 /* CoreData.framework in Frameworks */,
+				47913DB915AA851C00E6F879 /* libRESTClient.a in Frameworks */,
 				47E83B0F15A5505B0055A937 /* UIKit.framework in Frameworks */,
 				47E83B1115A5505B0055A937 /* Foundation.framework in Frameworks */,
 				47E83B1315A5505B0055A937 /* CoreGraphics.framework in Frameworks */,
@@ -114,9 +162,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30C0F47F6FC491A0A46F005A /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				30C0FBFDDA716065CB4EDFAE /* CountryMapper.h */,
+				30C0F920673FA0C4BF5DFF76 /* CountryMapper.m */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		30C0F4FCCBC95BCDC0704F38 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				30C0FE65974C1F5AD5AB45B4 /* Country.h */,
+				30C0F2DF1903B2255B957415 /* Country.m */,
+				30C0F47F6FC491A0A46F005A /* Mappers */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		47913DA515AA83C000E6F879 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47913DAF15AA83C100E6F879 /* libRESTClient.a */,
+				47913DB115AA83C100E6F879 /* RESTClient.framework */,
+				47913DB315AA83C100E6F879 /* RESTClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47913DD115AA8C1C00E6F879 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				47913DD215AA8C3300E6F879 /* TWServiceFacade.h */,
+				47913DD315AA8C3300E6F879 /* TWServiceFacade.m */,
+			);
+			name = Facade;
+			sourceTree = "<group>";
+		};
 		47E83AFF15A5505B0055A937 = {
 			isa = PBXGroup;
 			children = (
+				47913DA415AA83C000E6F879 /* RESTClient.xcodeproj */,
 				47E83B1415A5505B0055A937 /* CountriesApp */,
 				47E83B3E15A5505B0055A937 /* CountriesAppTests */,
 				47E83B0D15A5505B0055A937 /* Frameworks */,
@@ -138,6 +225,9 @@
 		47E83B0D15A5505B0055A937 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47913DBE15AA858E00E6F879 /* Security.framework */,
+				47913DBC15AA858800E6F879 /* MobileCoreServices.framework */,
+				47913DBA15AA857E00E6F879 /* CoreData.framework */,
 				47E83B0E15A5505B0055A937 /* UIKit.framework */,
 				47E83B1015A5505B0055A937 /* Foundation.framework */,
 				47E83B1215A5505B0055A937 /* CoreGraphics.framework */,
@@ -149,6 +239,7 @@
 		47E83B1415A5505B0055A937 /* CountriesApp */ = {
 			isa = PBXGroup;
 			children = (
+				47913DD115AA8C1C00E6F879 /* Facade */,
 				47E83B1D15A5505B0055A937 /* TWAppDelegate.h */,
 				47E83B1E15A5505B0055A937 /* TWAppDelegate.m */,
 				47E83B2015A5505B0055A937 /* TWMasterViewController.h */,
@@ -160,6 +251,7 @@
 				47E83B2C15A5505B0055A937 /* TWDetailViewController_iPhone.xib */,
 				47E83B2F15A5505B0055A937 /* TWDetailViewController_iPad.xib */,
 				47E83B1515A5505B0055A937 /* Supporting Files */,
+				30C0F4FCCBC95BCDC0704F38 /* Domain */,
 			);
 			path = CountriesApp;
 			sourceTree = "<group>";
@@ -273,6 +365,12 @@
 			mainGroup = 47E83AFF15A5505B0055A937;
 			productRefGroup = 47E83B0B15A5505B0055A937 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 47913DA515AA83C000E6F879 /* Products */;
+					ProjectRef = 47913DA415AA83C000E6F879 /* RESTClient.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				47E83B0915A5505B0055A937 /* CountriesApp */,
@@ -281,6 +379,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		47913DAF15AA83C100E6F879 /* libRESTClient.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRESTClient.a;
+			remoteRef = 47913DAE15AA83C100E6F879 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		47913DB115AA83C100E6F879 /* RESTClient.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RESTClient.framework;
+			remoteRef = 47913DB015AA83C100E6F879 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		47913DB315AA83C100E6F879 /* RESTClient.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RESTClient.app;
+			remoteRef = 47913DB215AA83C100E6F879 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		47E83B0815A5505B0055A937 /* Resources */ = {
@@ -351,6 +473,9 @@
 				47E83B1F15A5505B0055A937 /* TWAppDelegate.m in Sources */,
 				47E83B2215A5505B0055A937 /* TWMasterViewController.m in Sources */,
 				47E83B2515A5505B0055A937 /* TWDetailViewController.m in Sources */,
+				47913DD415AA8C3300E6F879 /* TWServiceFacade.m in Sources */,
+				30C0FAC737D87A4C15A39DC4 /* Country.m in Sources */,
+				30C0F56A4913F222739BFD02 /* CountryMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +485,9 @@
 			files = (
 				47E83B4615A5505B0055A937 /* CountriesAppTests.m in Sources */,
 				47E83B6215A5529B0055A937 /* CountryTest.m in Sources */,
+				47913DD515AA8C3300E6F879 /* TWServiceFacade.m in Sources */,
+				30C0F1F280774D88B0DB248A /* Country.m in Sources */,
+				30C0F13E9490697E4137125A /* CountryMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +496,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				47E83B5315A552060055A937 /* CountriesAppTests.m in Sources */,
+				47913DD615AA8C3300E6F879 /* TWServiceFacade.m in Sources */,
+				30C0FED499DB270532DA8CF1 /* Country.m in Sources */,
+				30C0FDBD41E8CA1FF4E3C26E /* CountryMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,10 +619,20 @@
 		47E83B4A15A5505B0055A937 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CountriesApp/CountriesApp-Prefix.pch";
 				INFOPLIST_FILE = "CountriesApp/CountriesApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/lib/RESTClient/Source\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -499,10 +640,20 @@
 		47E83B4B15A5505B0055A937 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CountriesApp/CountriesApp-Prefix.pch";
 				INFOPLIST_FILE = "CountriesApp/CountriesApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/lib/RESTClient/Source\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -517,6 +668,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CountriesApp/CountriesApp-Prefix.pch";
 				INFOPLIST_FILE = "CountriesAppTests/CountriesAppTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -532,6 +687,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CountriesApp/CountriesApp-Prefix.pch";
 				INFOPLIST_FILE = "CountriesAppTests/CountriesAppTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -548,6 +707,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CountriesApp/CountriesApp-Prefix.pch";
 				INFOPLIST_FILE = "CountriesAppTests copy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "CountriesAppTests copy";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -565,6 +728,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CountriesApp/CountriesApp-Prefix.pch";
 				INFOPLIST_FILE = "CountriesAppTests copy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "CountriesAppTests copy";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -590,6 +757,7 @@
 				47E83B4B15A5505B0055A937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47E83B4C15A5505B0055A937 /* Build configuration list for PBXNativeTarget "LogicTests" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +766,7 @@
 				47E83B4E15A5505B0055A937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47E83B5B15A552060055A937 /* Build configuration list for PBXNativeTarget "ApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -606,6 +775,7 @@
 				47E83B5D15A552060055A937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
